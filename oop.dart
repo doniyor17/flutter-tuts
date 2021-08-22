@@ -8,8 +8,8 @@ void main() {
 }
 
 class Student {
-  String name;
-  double _avarage; // _underscore var name is privating inside of a class
+  String name = '';
+  double _avarage = 0; // _underscore var name is privating inside of a class
 
   void set percentage(double mark) =>
       _avarage = (mark / 500) * 100; // SETTER FOR CHANGING INSTANCE VALUE

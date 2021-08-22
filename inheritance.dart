@@ -1,27 +1,37 @@
 void main() {
-  var cat = Cat();
-  cat.meow();
-  cat.eat();
-  print(cat.color);
-  print('~~~~~~~~~~~~~~~~~');
+  var cat1 = Cat();
+  cat1.name = 'Mosh';
+  cat1.age = 1;
+  cat1.color = 'brown';
+  cat1.call();
+  print('================');
+
+  var dog1 = Dog();
+  dog1.name = 'Rex';
+  dog1.age = 1;
+  dog1.color = 'brown';
+  dog1.call();
+  print('================');
 }
 
 class Animals {
-  String color = "Black";
-  void eat() {
-    print("I'm eating!");
+  String name = 'a';
+  String color = 'black';
+  int age = 1;
+  void eat(name) {
+    print('$name eating!');
   }
 }
 
 class Cat extends Animals {
-  int age;
-  String color = "Brown"; // |> PROPERTY OVERRIDING
-  void meow() {
+  void call() {
     print('Meow');
   }
+}
 
-  void eat() {
-    print('Meow I am eating!'); // |> METHOD OVERRIDING
-    super.eat();
+class Dog extends Animals {
+  void call() {
+    print('Woof');
   }
 }
+// +998 88 788 97 91
